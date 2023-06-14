@@ -1,0 +1,22 @@
+syntax="proto3";
+
+package taskPackage;
+
+service taskSchedule {
+  rpc getJobSchedule(Type) returns (Schedule);
+}
+
+message Type {
+  string type=1;
+}
+message Job {
+   string taskId=1;
+   string taskName=2;
+   string type=3;
+   string dependency=4;
+   string priority=5;
+   int64 timestamp=6;
+}
+message Schedule {
+    repeated Job schedule=1;
+}

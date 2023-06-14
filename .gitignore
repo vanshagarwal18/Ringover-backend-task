@@ -1,0 +1,4 @@
+# dependencies
+/task-scheduling-microservice/node_modules
+/sms-microservice/node_modules
+/mail-microservice/node_modules
